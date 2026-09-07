@@ -1,4 +1,6 @@
-Una libreria de c++ para el Desarrollo orientado a Objetos.
+<img src="./logo.png">
+
+# Una libreria de c++ para el Desarrollo de videojuegos.
 
 ![c++](https://img.shields.io/badge/c++-17-blue)
 ![sfml](https://img.shields.io/badge/sfml-2.5.0-green)
@@ -9,29 +11,26 @@ Una libreria de c++ para el Desarrollo orientado a Objetos.
 # Hello!, SpacesLib!
 
 ```c++
-#include <SFML/Graphics.hpp>
-#include "spaceslib.cpp"
+#include <SGML.hpp>
 
 int main(void) {
-  //inciamos ventana
-	init(800, 600, "pepe");
+  //iniciamos ventana
+  InitWindow(800, 600, "pepe");
 
   //establecemos framerate
   setFPS(60);
 
     //ciclo de vida
-    while (windowOpen()) {
-       //bloque de codigo de vida de ventana
-
-       WINDOW_LIFELOOP();
-
-       //limpiamos ventana
-       clear();
-       //dibujamos texto
-       drawText("Hola!, SpacesLib" , 100, 100, 30, default_font);
-
-       //mostramos
-       display();
+  while (windowOpen()) {
+        //bloque de codigo de vida de ventana
+        WINDOW_LIFELOOP();
+	    //limpiamos ventana
+	    clear();
+	    //dibujamos texto
+	    drawText("Hola!, SpacesLib" , 100, 100, 30, default_font);
+	
+	    //mostramos
+	    display();
     }
     //cerramos ventana
     close();
@@ -39,14 +38,13 @@ int main(void) {
 ```
 
 Resultado Esperado:
-![resultado](Screenshot_20260624-062650.png)
+(falta material)
 
 # Movimiento Básico
 
 ```c++
-#include <SFML/Graphics.hpp>
 #include <iostream>
-#include "spaceslib.cpp"
+#include <SGML.hpp>
 
 int main(void) {	
 	init(800, 600, "SpacesLib Test");
